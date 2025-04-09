@@ -1,0 +1,19 @@
+---
+import Layout from '@layouts/Layout.astro'
+import ProjectCard from '@components/project-card.astro'
+
+import { getCollection } from 'astro:content'
+
+const projects = await getCollection('projects')
+---
+
+<Layout>
+  <header id="hero" class="mb-6 mt-8">
+    <h1 class="text-4xl font-bold text-white mb-2">Projects</h1>
+    <p class="text-md text-[#439A86] mb-8">Some things I've been working on.</p>
+  </header>
+
+  <div class="space-y-8 mb-12">
+    {projects.map((project) => <ProjectCard project={project} />)}
+  </div>
+</Layout>

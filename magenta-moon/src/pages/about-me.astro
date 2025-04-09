@@ -1,0 +1,317 @@
+---
+import Layout from '@layouts/Layout.astro'
+---
+
+<Layout>
+  <header id="hero" role="banner" class="mb-6 mt-8">
+    <h1 class="text-4xl font-bold text-white mb-2">Dylan Bateman</h1>
+    <p class="text-md text-[#439A86] mb-8" role="heading" aria-level="2">
+      Software Engineer
+    </p>
+  </header>
+
+  <section
+    id="about-me"
+    role="region"
+    aria-label="About Dylan Bateman"
+    class="bg-gradient-to-br from-gray-800/40 to-gray-700/20 p-6 rounded-lg shadow-xl backdrop-blur-sm border border-gray-700/30 mb-8"
+  >
+    <div
+      class="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start text-center md:text-left"
+    >
+      <div>
+        <h2
+          class="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start"
+        >
+          Hey, I'm Dylan 👋
+        </h2>
+        <p class="text-gray-200 leading-relaxed">
+          I'm a passionate full-stack software engineer who wants to use code to
+          solve real-world problems. With expertise in <b>React</b>,
+          <b>TypeScript</b>, and <b>Node.js</b>. I'm inspired by innovative
+          companies that revolutionise their sectors to benefit users.
+        </p>
+      </div>
+      <div>
+        <img
+          src="/profile.jpeg"
+          alt="Dylan Bateman"
+          class="max-w-32 h-auto rounded-full object-cover border-4 border-gray-700/50 shadow-lg"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="personality"
+    role="region"
+    aria-label="Personal Interests"
+    class="mb-16"
+  >
+    <div class="flex items-center mb-8">
+      <div class="text-sm text-[#439A86]/70 font-bold tracking-wider">
+        personality break
+      </div>
+      <div
+        class="h-px bg-gradient-to-r from-[#439A86]/50 to-transparent flex-grow ml-4"
+      >
+      </div>
+    </div>
+
+    <div role="list" class="grid grid-cols-1 gap-8">
+      <article
+        role="listitem"
+        class="bg-gradient-to-br from-gray-800/40 to-gray-700/20 rounded-lg shadow-xl backdrop-blur-sm border border-gray-700/30 group overflow-hidden"
+      >
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-2/5 relative">
+            <img
+              src="/resources/football_1.jpeg"
+              alt="American football action shot"
+              class="w-full h-full object-cover"
+              style="min-height: 240px;"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-transparent to-[#02242e] opacity-40 md:block hidden"
+            >
+            </div>
+          </div>
+          <div class="md:w-3/5 p-6">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-10 h-10 rounded-full text-[#439A86] flex items-center justify-center mr-3 text-xl"
+              >
+                🏈
+              </div>
+              <h3 class="text-xl font-semibold text-white">
+                American Football
+              </h3>
+            </div>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              Outside of coding, a big part of my life is playing American
+              Football with the Shropshire Revolution. It's a fantastic team
+              sport that I found during my time at Uni - and I'm really glad I
+              did!
+            </p>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              Being part of the Revolution has taught me valuable lessons that
+              extend beyond the field. Understanding the importance of
+              individual roles but also how they work within the wider team,
+              adapting to changing situations, and clear communication are all
+              key aspects of success in football – and surprisingly relevant to
+              how I collaborate and approach problem-solving in software
+              development.
+            </p>
+            <div
+              class="pt-2 border-t border-gray-700/30 mt-4 flex justify-between items-center text-sm text-gray-400"
+            >
+              <span>Since 2023</span>
+              <a
+                href="https://shropshirerevolution.com"
+                class="text-[#7950cc] hover:text-white transition-colors font-medium"
+              >
+                Shropshire Revolution
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article
+        role="listitem"
+        class="bg-gradient-to-br from-gray-800/40 to-gray-700/20 p-6 rounded-lg shadow-xl backdrop-blur-sm border border-gray-700/30"
+      >
+        <div class="flex flex-row gap-12 items-center">
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-2">
+              ⚽ Football & F1 🏎️
+            </h3>
+
+            <p class="text-gray-300 leading-relaxed mb-4">
+              I've been a Wolves season ticket holder since I was a kid and have
+              experienced the ups and downs of following the club. Despite the
+              (more than) occasional frustrations, I love football and going
+              home to Molineux.
+            </p>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              Away from a pitch, I'm also a Formula 1 fan. It really grabbed me
+              a few years ago and the high intensity and the different
+              strategies interests me. I'm hoping to finally tick attending a
+              Grand Prix off my bucket list this year!
+            </p>
+            <div
+              class="pt-2 border-t border-gray-700/30 mt-4 flex justify-between items-center text-sm text-gray-400"
+            >
+              <span class="text-[#FDB913]">Wolverhampton Wanderers</span>
+              <span class="text-[#FDB913]">McLaren</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article
+        role="listitem"
+        class="bg-gradient-to-br from-gray-800/40 to-gray-700/20 p-6 rounded-lg shadow-xl backdrop-blur-sm border border-gray-700/30"
+      >
+        <div class="flex flex-row gap-12 items-center">
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-2">
+              🎮 Video Games
+            </h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              Video games have been a constant in my life efrom early childhood.
+              That early passion for playing eventually evolved into a curiosity
+              about how they were made. It was through this interest with my
+              brother, that I first discovered the world of programming. This
+              ultimately led me to pursue a degree in Games Development, which
+              was a fantastic journey in understanding the technical side of
+              creating interactive experiences.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section role="region" aria-label="Work Philosophy" class="mb-16">
+    <div class="flex items-center mb-8">
+      <div class="text-sm text-[#439A86]/70 font-bold tracking-wider">
+        ...enough about me
+      </div>
+      <div
+        class="h-px bg-gradient-to-r from-[#439A86]/50 to-transparent flex-grow ml-4"
+      >
+      </div>
+    </div>
+
+    <div
+      class="bg-gradient-to-br from-gray-800/40 to-gray-700/20 p-8 rounded-lg shadow-xl backdrop-blur-sm border border-gray-700/30"
+    >
+      <div role="list" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article role="listitem">
+          <div class="mb-4 text-[#439A86] text-2xl font-bold">01</div>
+          <h3 class="text-xl font-semibold text-white mb-3">Team Vibes</h3>
+          <p class="text-gray-300 leading-relaxed">
+            Honestly, I love working in a collaborative team. Bouncing ideas off
+            each other, having open conversations, and tcoming up with solutions
+            together.
+          </p>
+        </article>
+        <article role="listitem">
+          <div class="mb-4 text-[#439A86] text-2xl font-bold">02</div>
+          <h3 class="text-xl font-semibold text-white mb-3">
+            Continuous Learning & Adaptability
+          </h3>
+          <p class="text-gray-300 leading-relaxed">
+            Tech is constantly evolving, and I enjoy learning new technologies
+            and methodologies to deliver the best results
+          </p>
+        </article>
+        <article role="listitem">
+          <div class="mb-4 text-[#439A86] text-2xl font-bold">03</div>
+          <h3 class="text-xl font-semibold text-white mb-3">
+            Making Things People Actually Want to Use
+          </h3>
+          <p class="text-gray-300 leading-relaxed">
+            Creating software that makes a positive difference in people's lives
+            is what truly motivates me!
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section role="region" aria-label="Contact Information" class="mb-16">
+    <div class="flex items-center mb-8">
+      <div class="text-sm text-[#439A86]/70 font-bold tracking-wider">
+        contact me
+      </div>
+      <div
+        class="h-px bg-gradient-to-r from-[#439A86]/50 to-transparent flex-grow ml-4"
+      >
+      </div>
+    </div>
+    <div
+      class="bg-gradient-to-br from-gray-800/40 to-gray-700/20 p-8 rounded-lg shadow-xl backdrop-blur-sm border border-gray-700/30"
+    >
+      <h2 class="text-2xl font-semibold text-white mb-4">Get in Touch!</h2>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        If you have an exciting project in mind or would like to explore how my
+        skills can contribute to your team, I'd love to hear from you.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a
+          href="https://github.com/dylanbateman"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-4 py-2 bg-gray-700/50 hover:bg-[#439A86] text-white hover:text-[#02242e] rounded-md font-bold text-sm transition-colors flex items-center gap-2"
+        >
+          <span>Email</span>
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="size-5"
+          >
+            <path
+              d="M1.5 3.5C1.5 2.94772 1.94772 2.5 2.5 2.5H12.5C13.0523 2.5 13.5 2.94772 13.5 3.5V11.5C13.5 12.0523 13.0523 12.5 12.5 12.5H2.5C1.94772 12.5 1.5 12.0523 1.5 11.5V3.5ZM3.01944 3.5L7.5 7.01099L11.9806 3.5H3.01944ZM12.5 4.51944L7.7942 8.4084C7.59398 8.57025 7.30602 8.57025 7.1058 8.4084L2.5 4.51944V11.5H12.5V4.51944Z"
+              fill="currentColor"></path>
+          </svg>
+        </a>
+        <a
+          href="https://github.com/dylanbateman"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-4 py-2 bg-gray-700/50 hover:bg-[#439A86] text-white hover:text-[#02242e] rounded-md font-bold text-sm transition-colors flex items-center gap-2"
+        >
+          <span>GitHub</span>
+          <svg
+            class="w-4 h-4"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            ><path
+              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+            ></path></svg
+          >
+        </a>
+        <a
+          href="https://linkedin.com/in/dylanbateman"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-4 py-2 bg-gray-700/50 hover:bg-[#439A86] text-white hover:text-[#02242e] rounded-md font-bold text-sm transition-colors flex items-center gap-2"
+        >
+          <span>LinkedIn</span>
+          <svg
+            class="w-4 h-4"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            ><path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+            ></path></svg
+          >
+        </a>
+        <a
+          href="https://twitter.com/dylanbateman_"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-4 py-2 bg-gray-700/50 hover:bg-[#439A86] text-white hover:text-[#02242e] rounded-md font-bold text-sm transition-colors flex items-center gap-2"
+        >
+          <span>Twitter</span>
+          <svg
+            class="w-4 h-4"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            ><path
+              d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

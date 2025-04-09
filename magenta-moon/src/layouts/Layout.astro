@@ -1,0 +1,23 @@
+---
+import Footer from '@components/Footer.astro'
+import Navigation from '@components/Navigation.astro'
+import './src/styles/global.css'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Dylan Bateman | Software Engineer</title>
+  </head>
+  <body
+    class="relative min-h-screen bg-[#1B2430] text-white font-mono max-w-4xl mx-auto px-4 py-4 sm:px-6 sm:py-8"
+  >
+    <Navigation />
+    <slot />
+    <Footer />
+  </body>
+</html>

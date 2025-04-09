@@ -1,0 +1,40 @@
+---
+const { project } = Astro.props
+---
+
+<div
+  class="group bg-gradient-to-br from-gray-800/40 to-gray-700/20 p-4 rounded-lg shadow-xl backdrop-blur-sm border border-gray-700/30 mb-6"
+>
+  <div class="flex mb-4">
+    <div>
+      <a
+        href={`/projects/${project.id}`}
+        class="group flex items-center gap-3 transition-colors text-gray-700 hover:text-[#439A86]"
+      >
+        <h3 class="text-white text-md mb-2">{project.data.title}</h3>
+        <span
+          class="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all -ml-2 -mt-4"
+        >
+          →
+        </span>
+      </a>
+      <div class="flex items-center gap-3 text-sm">
+        <span class="text-[#439A86]">{project.data.status}</span>
+      </div>
+    </div>
+  </div>
+  <p class="text-gray-200 mb-4 leading-relaxed">
+    {project.data.description}
+  </p>
+  <div class="flex justify-between items-center mb-2">
+    <div class="flex flex-wrap gap-2">
+      {
+        project.data.tech.map((tech) => (
+          <span class="text-sm bg-[#02242e] px-3 py-1 text-[#439A86] rounded">
+            {tech}
+          </span>
+        ))
+      }
+    </div>
+  </div>
+</div>
