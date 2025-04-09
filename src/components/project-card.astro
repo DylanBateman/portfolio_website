@@ -9,11 +9,11 @@ const { project } = Astro.props
     <div>
       <a
         href={`/projects/${project.id}`}
-        class="group flex items-center gap-3 transition-colors text-gray-700 hover:text-[#439A86]"
+        class="group flex items-center gap-3 transition-colors text-gray-700"
       >
         <h3 class="text-white text-md mb-2">{project.data.title}</h3>
         <span
-          class="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all -ml-2 -mt-4"
+          class="w-4 h-4 text-[#439A86] group-hover:translate-x-1 transition-all -ml-2 -mt-4"
         >
           →
         </span>
